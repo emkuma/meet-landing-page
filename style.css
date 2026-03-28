@@ -1,0 +1,203 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html {
+    font-family: "Arial", sans-serif;
+ }
+
+ body {
+   background-color: hsl(260, 33%, 98%);
+   color: hsl(240, 5%, 70%);
+ }
+
+ h1 {
+   color: black;
+   font-size: 1.7rem;
+ }
+
+ p {
+   font-size: 12px;
+   line-height: 1.7;
+   letter-spacing: 1.2px;
+ }
+
+ .container {
+   max-width: 1100px;
+ }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+ .hero-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 3rem;
+ }
+
+ .hero-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+ }
+
+ .hero-img {
+   width: 60%;
+   height: auto;
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+ .page-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }   
+
+ .page-1 > h1, .page-1 > p {
+    text-align: center;
+ }
+
+ .page-1 > h1 {
+    width: 55%;
+    padding-top: 35px;
+ }
+
+ .page-1 > p {
+    width: 95%;
+    padding-left: 10px;
+ }
+
+ .page-1 a {
+    color: hsl(0, 0%, 100%);
+ }
+
+ .btn {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .btn-download,
+ .btn-what-is-it,
+ .page-3__btn-download--modify {
+    padding-left: 3em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    text-decoration: none;
+    border-radius: 999em;
+    font-size: .6rem;
+ }
+
+ .btn-download {
+    background-color: #4e96a7;
+    margin-bottom: 15px;
+ }
+
+ .version {
+    color: #79c0d5;
+    padding-left: 8px;
+ }
+
+ .btn-what-is-it {
+    width: 80%;
+    background: #855fb0;
+    margin: 0 auto;
+ }
+
+ .vertical-line {
+    border-left: 1px solid hsl(260, 4%, 86%);
+    height: 75px;
+    margin-top: 40px;
+    margin-left: 21px;
+    margin: 40px;
+ }
+
+ .vertical-line--modify {
+   margin-bottom: -49px;
+ }
+
+ .page-marker {
+    width: 45px;
+    height: 45px;
+    border: 1px solid hsl(260, 4%, 86%);
+    border-radius: 50%;
+    padding: 11px;
+ }
+
+ .page-marker--modify {
+   margin-top: -1px;
+   color: hsl(235, 10%, 75%);
+ }
+
+ .page-2__img {
+   width: 42%;
+   border-radius: 7%;
+   margin-top: 12px;
+   margin-right: 12px;
+ }
+
+ .page-2__h1--modify, .page-3__h1--modify {
+   margin-top: .8rem;
+   font-size: 1.4rem;
+   font-weight: 700;
+ }
+
+ .page-2 > p {
+   margin-top: 4em;
+   letter-spacing: 4px;
+   text-transform: uppercase;
+   color: #79c0d5;
+ }
+
+ #page-2__p--modify {
+   color: hsl(244, 11%, 75%);
+   letter-spacing: 0;
+   text-transform: none;
+   margin-top: 2em;
+ }
+
+ .page-3 {
+   background-color: hsl(192, 33%, 51%);
+   color: hsl(260, 4%, 86%);
+   padding: 2.6em;
+   margin-top: -36px;
+ }
+
+ .page-3__h1--modify, .page-3__p--modify {
+   color: hsl(260, 4%, 92%);
+ }
+
+ .page-3__btn-download--modify {
+   width: 49%;
+   background-color: hsl(267, 33%, 54%);
+   margin-bottom: 15px;
+   color: hsl(260, 4%, 92%);
+   font-size: .72rem;
+}
+
+/*                        Utility class for centering text.               */
+
+.center-text {
+  text-align: center;
+}
+
+
+
+
+
+
+
