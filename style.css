@@ -67,18 +67,18 @@
     gap: 20px;
  }   
 
- .page-1 > h1, .page-1 > p {
-    text-align: center;
- }
-
- .page-1 > h1 {
+ .page-1-title {
     width: 55%;
     padding-top: 35px;
  }
 
- .page-1 > p {
-    width: 95%;
+ .page-1-text {
+    width: 78%;
     padding-left: 10px;
+    text-transform: none;
+    margin: 0;
+    color: hsl(0, 0%, 55%);
+    letter-spacing: 0;
  }
 
  .page-1 a {
@@ -118,16 +118,17 @@
     margin: 0 auto;
  }
 
+ .vertical-line-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
  .vertical-line {
     border-left: 1px solid hsl(260, 4%, 86%);
     height: 75px;
     margin-top: 40px;
-    margin-left: 21px;
-    margin: 40px;
- }
-
- .vertical-line--modify {
-   margin-bottom: -49px;
  }
 
  .page-marker {
@@ -136,45 +137,64 @@
     border: 1px solid hsl(260, 4%, 86%);
     border-radius: 50%;
     padding: 11px;
+    margin-top: 0;
+    margin-bottom: 1rem;
  }
 
  .page-marker--modify {
-   margin-top: -1px;
    color: hsl(235, 10%, 75%);
+ }
+
+ .page-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
  }
 
  .page-2__img {
    width: 42%;
+   height: 42%;
    border-radius: 7%;
-   margin-top: 12px;
-   margin-right: 12px;
  }
 
- .page-2__h1--modify, .page-3__h1--modify {
-   margin-top: .8rem;
-   font-size: 1.4rem;
-   font-weight: 700;
- }
+.page-2-ad-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
- .page-2 > p {
-   margin-top: 4em;
-   letter-spacing: 4px;
+.page-2__h1--modify, .page-3__h1--modify {
+  width: 80%;
+  font-weight: 900;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+ .page-2, p {
+   margin-top: 30px;
+   letter-spacing: 3px;
    text-transform: uppercase;
-   color: #79c0d5;
+   color: hsl(194, 52%, 50%);
  }
 
- #page-2__p--modify {
-   color: hsl(244, 11%, 75%);
+ .page-2__p--modify {
+   width: 80%;
+   margin-top: 20px;
+   color: hsl(240, 5%, 70%);
    letter-spacing: 0;
    text-transform: none;
-   margin-top: 2em;
  }
 
  .page-3 {
    background-color: hsl(192, 33%, 51%);
    color: hsl(260, 4%, 86%);
    padding: 2.6em;
-   margin-top: -36px;
+   margin-top: -39px;
+   position: relative;
  }
 
  .page-3__h1--modify, .page-3__p--modify {
