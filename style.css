@@ -145,6 +145,12 @@
    color: hsl(235, 10%, 75%);
  }
 
+ .page-marker--modify-overlay {
+   top: -20px;
+   z-index: 10; 
+   background-color: hsl(255, 40%, 98%);    
+ }
+
  .page-2 {
     display: flex;
     flex-direction: row;
