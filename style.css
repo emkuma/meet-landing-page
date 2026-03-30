@@ -91,17 +91,6 @@
 	 flex-direction: column;
  }
 
- .btn-download,
- .btn-what-is-it,
- .page-3__btn-download--modify {
-	 padding-left: 3em;
-	 padding-top: 1.3em;
-	 padding-bottom: 1.3em;
-	 text-decoration: none;
-	 border-radius: 999em;
-	 font-size: .6rem;
- }
-
  .btn-download {
 	 background-color: #4e96a7;
 	 margin-bottom: 15px;
@@ -229,10 +218,21 @@
      padding: 8px 14px;
 }
 
-/*                        Utility class for centering text.               */
+/*          Utility class for centering text.          */
 
 .center-text {
     text-align: center;
+}
+
+/*          Utility class for styling the button.      */
+
+.btn-style {
+    padding-left: 3em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    text-decoration: none;
+    border-radius: 999em;
+    font-size: .6rem;
 }
 
 
