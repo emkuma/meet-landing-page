@@ -104,7 +104,7 @@
  .btn-what-is-it {
 	 width: 80%;
 	 background: #855fb0;
-	 margin: 0 auto;
+	 /* margin: 0 auto; */
  }
 
  .vertical-line-align {
@@ -218,13 +218,15 @@
      padding: 8px 14px;
 }
 
-/*          Utility class for centering text.          */
+
+/*Utility class for centering text.*/
 
 .center-text {
     text-align: center;
 }
 
-/*          Utility class for styling the button.      */
+
+/*Utility class for styling the button.*/
 
 .btn-style {
     padding-left: 3em;
@@ -234,6 +236,52 @@
     border-radius: 999em;
     font-size: .6rem;
 }
+
+/*Media Queries*/
+
+@media (min-width: 780px) {
+    .page-1 {
+        
+    }
+
+    .page-1-title {
+        font-size: 2.5rem;
+        padding-top: 80px;
+    }
+
+    .page-1-text {
+        font-size: 16px;
+        padding-left: 6rem;
+        padding-right: 7rem;
+    }
+
+    .btn {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 14px;
+        justify-content: center;
+        padding-top: 10px;
+        width: 65%;
+    }
+
+    .btn-download {
+        width: 38%;
+    }
+
+    .btn-what-is-it {
+        width: 32%;
+    }
+
+    .btn-style {
+        font-size: 14px;
+        padding-right: 14px;
+    }
+
+    
+
+}  
+
+
 
 
 
