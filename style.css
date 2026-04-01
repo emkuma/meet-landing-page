@@ -9,6 +9,7 @@
  }
 
  body {
+     height: 100%;
 	 background-color: hsl(260, 33%, 98%);
 	 color: hsl(240, 5%, 70%);
  }
@@ -104,7 +105,6 @@
  .btn-what-is-it {
 	 width: 80%;
 	 background: #855fb0;
-	 /* margin: 0 auto; */
  }
 
  .vertical-line-align {
@@ -131,7 +131,7 @@
  }
 
  .page-marker--modify {
-	 color: hsl(235, 10%, 75%);
+	 color: hsl(235, 10%, 55%);
  }
 
  .page-marker--modify-overlay {
@@ -146,6 +146,7 @@
 	 flex-wrap: wrap;
 	 justify-content: center;
 	 gap: 12px;
+     min-height: 30vh;
  }
 
  .page-2__img {
@@ -189,7 +190,10 @@
 	 color: hsl(260, 4%, 86%);
      padding: 50px 35px;
 	 margin-top: -39px;
+     margin-left: 48px;
 	 position: relative;
+     width: 80%;
+     min-height: 12vh;
  }
 
  .page-3__h1--modify, .page-3__p--modify {
@@ -202,11 +206,12 @@
 
  .page-3__p--modify {
     margin-top: 0;
-    width: 95%;
+    width: 80%;
     text-transform: none;
     letter-spacing: 0;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+    
  }
 
  .page-3__btn-download--modify {
@@ -241,7 +246,7 @@
 
 @media (min-width: 780px) {
     .page-1 {
-        
+        margin-right: 60px;
     }
 
     .page-1-title {
@@ -260,25 +265,76 @@
         align-items: flex-start;
         gap: 14px;
         justify-content: center;
-        padding-top: 10px;
-        width: 65%;
+        flex-wrap: wrap;
+        width: 60%;
+        min-height: 25vh;
     }
 
     .btn-download {
-        width: 38%;
+        width: 35%;
     }
 
     .btn-what-is-it {
-        width: 32%;
+        width: 30%;
     }
 
     .btn-style {
-        font-size: 14px;
-        padding-right: 14px;
+        font-size: 12px;
+        padding-top: 12px;
+        /* padding-left: 18px; */
+        /* padding-right: 10px; */
     }
 
-    
+    .page-1 .vertical-line-align {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-self: center;
+       width: 60%;
+       margin-bottom: 100px;
+    }
 
+    .page-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;
+        margin-left: 55px;
+        margin-top: -75px;
+        gap: 16px;
+    }
+
+    .page-2__img {
+        width: 20%;
+        height: 20%;
+        border-radius: 7%;
+    }
+
+    .page-2-ad-text {
+        width: 75%;
+        min-height: 25vh;
+    }
+
+    .page-3__h1--modify {
+        padding-top: 10px;
+    }
+
+    .page-3__p--modify {
+        padding-left: 70px;
+        padding-bottom: 30px;
+    }
+
+    .page-3__btn-download--modify {
+        background-color: hsl(267, 33%, 54%);
+        color: hsl(260, 4%, 92%);
+        padding-bottom: 12px;
+    }
+    
+    .btn-style {
+        margin-bottom: 30px;
+    }
 }  
 
 
