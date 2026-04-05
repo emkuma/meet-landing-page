@@ -226,13 +226,11 @@ p {
   padding: 8px 14px;
 }
 
-
 /*Utility class for centering text.*/
 
 .center-text {
   text-align: center;
 }
-
 
 /*Utility class for styling the button.*/
 
@@ -247,95 +245,65 @@ p {
 
 /*Media Queries*/
 
-@media (min-width: 780px) {
+@media (min-width: 708px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .hero-imgs { */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
   .page-1 {
-    margin-right: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
   }
 
   .page-1-title {
+    width: 35%;
     font-size: 2.5rem;
-    padding-top: 80px;
   }
 
   .page-1-text {
-    font-size: 16px;
-    padding-left: 6rem;
-    padding-right: 7rem;
+    width: 48%;
+    place-self: center;
+    font-size: 14px;
   }
 
   .btn {
+    width: 100%;
+    display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     align-items: flex-start;
-    gap: 14px;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
-    min-height: 25vh;
-  }
-
-  .btn-download {
-    width: 35%;
-  }
-
-  .btn-what-is-it {
-    width: 30%;
-  }
-
-  .btn-style {
-    font-size: 12px;
-    padding-top: 12px;
-    /* padding-left: 18px; */
-    /* padding-right: 10px; */
-  }
-
-  .page-1 .vertical-line-align {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    width: 60%;
-    margin-bottom: 100px;
-  }
-
-  .page-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 75%;
-    margin: auto;
-    margin-left: 55px;
-    margin-top: -75px;
     gap: 16px;
   }
 
-  .page-2__img {
-    width: 20%;
-    height: 20%;
-    border-radius: 7%;
+  .btn-download {
+    width: 18%;
   }
 
-  .page-2-ad-text {
-    width: 75%;
-    min-height: 25vh;
+  .btn-what-is-it {
+    width: 15%;
+    align-items: flex-start;
   }
 
-  .page-3__h1--modify {
-    padding-top: 10px;
+  .vertical-line-align {
+    
   }
 
-  .page-3__p--modify {
-    padding-left: 70px;
-    padding-bottom: 30px;
-  }
 
-  .page-3__btn-download--modify {
-    background-color: hsl(267, 33%, 54%);
-    color: hsl(260, 4%, 92%);
-    padding-bottom: 12px;
-  }
-
-  .btn-style {
-    margin-bottom: 30px;
-  }
 }
