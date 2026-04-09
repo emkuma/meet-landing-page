@@ -116,16 +116,18 @@ a {
 }
 
 .page-marker {
-  width: 45px;
-  height: 45px;
-  border: 1px solid hsl(260, 4%, 86%);
-  border-radius: 50%;
-  padding: 11px;
-  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-marker--modify {
+  width: 45px;
+  height: 45px;
   color: hsl(235, 10%, 55%);
+  border: 1px solid hsl(260, 4%, 86%);
+  border-radius: 50%;
+  margin-top: 0;
 }
 
 .page-marker--modify-overlay {
@@ -315,12 +317,18 @@ p {
     overflow: visible;
   }
 
+  .page-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .page-marker--modify-overlay {
     position: absolute;
-    transform: translate(-50%, -50%);
+    top: 100%;
     left: 50%;
+    transform: translate(-50%, -50%);
     background-color: hsl(255, 40%, 98%);
-    bottom: negative;
     z-index: 10;
   }
 
@@ -328,7 +336,6 @@ p {
     margin: auto;
     width: 60%;
     height: 30vh;
-    position: relative;
   }
 
   .page-3__btn-download--modify {
