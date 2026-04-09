@@ -121,7 +121,6 @@ a {
   border: 1px solid hsl(260, 4%, 86%);
   border-radius: 50%;
   padding: 11px;
-  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -130,19 +129,19 @@ a {
 }
 
 .page-marker--modify-overlay {
+  position: absolute;
   top: -20px;
-  z-index: 10;
+  margin-top: 0;
   background-color: hsl(255, 40%, 98%);
+  z-index: 100;
 }
 
 .page-2 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  min-height: 30vh;
 }
 
 .page-2__img {
@@ -176,7 +175,7 @@ p {
 }
 
 .page-3 {
-  height: 35vh;
+  
 }
 
 .page-3-style {
@@ -185,7 +184,6 @@ p {
   margin-top: -39px;
   position: relative;
   max-width: 500px;
- 
 }
 
 .page-3__h1--modify,
@@ -240,20 +238,25 @@ p {
 }
 
 /*Media Queries*/
-@media (min-width: 780px) {
-  .page-1 {
-    margin-right: 60px;
+@media (min-width: 768px) {
+  .hero {
+    gap: 70px;
   }
 
+  .page-1-title, 
+  .page-1-text {
+    text-align: center;
+  }
+  
   .page-1-title {
+    width: 35%;
     font-size: 2.5rem;
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
   .page-1-text {
     font-size: 16px;
-    padding-left: 6rem;
-    padding-right: 7rem;
+    width: 48%;
   } 
 
   .btn {
@@ -262,7 +265,7 @@ p {
     gap: 14px;
     justify-content: center;
     flex-wrap: wrap;
-    width: 60%;
+    width: 58%;
     min-height: 25vh;
   }
 
@@ -276,7 +279,8 @@ p {
 
   .btn-style {
     font-size: 12px;
-    padding-top: 10px;
+    padding-top: 16px;
+    padding-left: 24px;
   }
 
   .page-1 .vertical-line-align {
@@ -289,15 +293,9 @@ p {
   }
 
   .page-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
     width: 75%;
     margin: auto;
-    margin-left: 55px;
     margin-top: -75px;
-    gap: 16px;
   }
 
   .page-2__img {
@@ -308,16 +306,23 @@ p {
 
   .page-2-ad-text {
     width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 25vh;
   }
 
-  .page-3__h1--modify {
-    padding-top: 10px;
+  .page-marker--modify-overlay {
+    position: absolute;
+    z-index: 10;
+    background-color: hsl(255, 40%, 98%);
   }
 
-  .page-3__p--modify {
-    padding-left: 70px;
-    padding-bottom: 30px;
+  .page-3 {
+    margin: auto;
+    width: 60%;
+    height: 30vh;
+    position: relative;
   }
 
   .page-3__btn-download--modify {
@@ -328,6 +333,6 @@ p {
   }
 
   .btn-style {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
