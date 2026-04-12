@@ -102,17 +102,32 @@ a {
   background: #855fb0;
 } 
 
+/*                Aligning the page marker for page 2.  */
 .vertical-line-align {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  left: 12%;
+}  
+
+.vertical-2-line-align {
+  position: relative;
+  left: 50%;
 }
 
 .vertical-line {
-  border-left: 1px solid hsl(260, 4%, 86%);
+  /* border-left: 1px solid hsl(260, 4%, 86%); */
+  border-left: 1px solid red;
   height: 75px;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.page-marker-align {
+  position: relative;
+  left: -45%;
+}
+
+.page-2-marker-align {
+  position: relative;
+  left: -10%;
 }
 
 .page-marker {
@@ -128,15 +143,23 @@ a {
   border: 1px solid hsl(260, 4%, 86%);
   border-radius: 50%;
   margin-top: 0;
+  /* left: 10%; */
 }
 
 .page-marker--modify-overlay {
   position: absolute;
+  left: 15%;
+  transform: translate(-50%, -50%); 
   background-color: hsl(255, 40%, 98%);
   z-index: 10;
 }
 
+/* page-2 class is empty but it is coded to be a placeholder/identifier. */
 .page-2 {
+
+}
+
+.page-2-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,7 +198,7 @@ p {
 }
 
 .page-3 {
-  
+  margin-top: 0;
 }
 
 .page-3-style {
@@ -293,9 +316,9 @@ p {
   }
 
   .page-2 {
-    width: 75%;
-    margin: auto;
-    margin-top: -75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .page-2__img {
@@ -305,11 +328,7 @@ p {
   }
 
   .page-2-ad-text {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 25vh;
+    max-width: 500px;
   }
 
   .vertical-line-align {
@@ -326,8 +345,8 @@ p {
   .page-marker--modify-overlay {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%; */
+    transform: translate(-40%, -40%);
     background-color: hsl(255, 40%, 98%);
     z-index: 10;
   }
